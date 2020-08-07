@@ -42,10 +42,10 @@ public class MainActivity extends AppCompatActivity {
         String encodedCity = URLEncoder.encode(city,"UTF-8");
 
 //        Log.i("",city);
-//        Log.i("URL","http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=b211804c9325ebca6a8a93b7096545b5");
+//        Log.i("URL","http://api.openweathermap.org/data/2.5/weather?q=" + city + "your api key here");
 
         DownloadTask task = new DownloadTask();
-        task.execute("http://api.openweathermap.org/data/2.5/weather?q=" + encodedCity + "&appid=b211804c9325ebca6a8a93b7096545b5");
+        task.execute("http://api.openweathermap.org/data/2.5/weather?q=" + encodedCity + "your api key here");
 
     }
 
